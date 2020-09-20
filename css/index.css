@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Krona+One&display=swap');
+
+:root {
+    --main-color: rgb(243 178 61);
+    --accent-color: #f2eccd;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.header-nav .logo{
+    font-size: 1.7rem;
+    text-align: center;
+    border: 1.5px solid var(--main-color);
+    box-shadow: 0 0 7px #666;
+    margin: 5px;
+    padding: 5px;
+    color: var(--main-color);
+}
+
+.header-nav .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.header-nav .menu-items a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size:0.7rem;
+    padding: 5px;
+    border: 1.5px solid transparent;
+}
+
+.header-nav .menu-items a:hover {
+    border: 1.5px solid var(--main-color);
+    box-shadow: 0 0 7px #666;
+}
+
+@media (min-width: 769px) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header-banner {
+    background-image: url(../img/100.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 7px #666;
+}
+
+.header-banner h1 {
+    font-size: 1.7rem;
+    color: white;
+}
+
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: var(--main-color);
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+#foto-body h3 {
+    text-align: center;
+}
+
+.foto-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 500px) {
+    .foto-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    
+    }
+}
+
+@media (min-width: 900px) {
+    .foto-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
